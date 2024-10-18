@@ -14,16 +14,23 @@ a{
     max-width: 1200px;
     margin: 0 auto;
 }
-body{
-  font-family: "Inter", sans-serif;
-}
+
+
+  /* font-family: "Inter", sans-serif;
+  font-family: "Space Grotesk", sans-serif; */
+
 /* common css end */
 
 
 /* navbar start */
 nav{
-    background: rgba(57, 71, 146, 1);
     color: #fff;
+    top: 34px;
+    left: 0;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    position: absolute;
+    z-index: 9999;
 }
 nav .sidebyside{
     display: grid;
@@ -34,6 +41,7 @@ nav .menu {
     display: grid;
     grid-template-columns: repeat(4,auto);
     gap: 60px;
+    width: 100%;
 }
 nav .menu ul{
     display: contents;
@@ -85,8 +93,162 @@ nav .btn a{
 nav .btn a:hover{
     border-color:#fff;
 }
-nav {
-    margin-top: 50px;
-}
 
 /* navbar end */
+
+
+/* banner start */
+#banner{
+    background: rgba(57, 71, 146, 1);
+    padding: 210px 0 135px 0;
+    color: #fff;
+    position: relative;
+}
+#banner .sidebyside{
+    display: grid;
+    grid-template-columns: 62% 38%;
+}
+
+#banner .item_left h1{
+    font-size: 64px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    line-height: 120%;
+    position: relative;
+}
+
+#banner .item_left h1 .shape {
+    position: absolute;
+    bottom: -12px;
+    right: 15px;
+    width: 220px;
+}
+#banner .item_left h1 .arrow {
+    position: absolute;
+    top: 25px;
+    right: -67px;
+    width: 90.99px;
+}
+
+#banner .item_left > p {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+    padding: 32px 0 40px 0;
+    width: 609px;
+    line-height: 34px;
+    line-height: 170%;
+}
+
+#banner .btn {
+    gap: 24px;
+    display: flex;
+}
+#banner .btn a{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 18px 32px;
+    transition: 0.5s;
+    color: #394792;
+    background-color: #fff;
+}
+
+#banner .btn a:hover{
+    color: #fff;
+    background-color: transparent;
+}
+#banner .item_left .info {
+    display: grid;
+    grid-template-columns: repeat(3,90px);
+    margin-top: 60px;
+    gap: 80px;
+}
+#banner .item_left .info h3 {
+    font-size: 32px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+}
+#banner .item_left .info p{
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    width: 86px;
+    line-height: 150%;
+    margin-top: 8px;
+}
+#banner .info .item {
+    position: relative;
+}
+#banner .info .item::after {
+    width: 1px;
+    height: 62.5px;
+    content: "";
+    background-color: rgb(255, 255, 255,.16);
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    right: -40px;
+    transform: translateY(-50%);
+}
+#banner .info .item:last-child::after {
+    display: none;
+}
+#banner .item_right img {
+    width: 115%;
+    position: relative;
+    right: 42px;
+    top: 220px;
+}
+/* banner end */
+
+
+
+/* managment  start */
+#managment{
+    margin: 100px 0;
+}
+#managment .title h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 140%;
+    text-align: center;
+    position: relative;
+}
+#managment .title h2 .shape {
+    position: absolute;
+    bottom: 50px;
+    right: 22%;
+    width: 176px;
+}
+#managment .sidebyside{
+    display: grid;
+    grid-template-columns: repeat(3, 379px);
+    gap: 32px;
+    margin-top: 64px;
+}
+#managment .sidebyside .item img{
+    max-width: 379px;
+}
+#managment .sidebyside .item h4{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 140%;
+    font-family: "Space Grotesk", sans-serif;
+    margin: 24px 0 16px 0;
+}
+#managment .sidebyside .item p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 170%;
+    font-family: "Inter", sans-serif;
+}
+
+/* managment  end */
+
+
+
+/* our start */
